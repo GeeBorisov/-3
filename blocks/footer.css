@@ -1,0 +1,155 @@
+.footer {
+    max-width: auto;
+    min-height: 411px;
+    margin-top: 116px;
+    background: #FCFCFD;
+}
+
+.footer-row {
+    display: flex;
+}
+.footer-first-row {
+}
+.footer-main {
+    padding-top: 61px;
+}
+.footer-main img {
+margin-left: -30px;
+}
+.footer-text {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+opacity: 0.7;
+}
+.footer-mail {
+    margin-top: 30px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+letter-spacing: 0.06em;
+opacity: 0.7;
+}
+.footer-social {
+    margin-top: 15px;
+    display: flex;
+}
+.footer-social img {
+    margin-right: 25px;
+}
+
+.footer-second-row {
+    display: flex;
+    margin-top: 61px;
+    margin-left: 77px;
+}
+.footer-nav {
+}
+.footer-nav a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #081F32;
+    opacity: 0.7;
+}
+.footer-nav li {
+margin-bottom: 20px;
+}
+.footer-nav-title {
+ margin-bottom: 30px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+}
+.footer-nav + .footer-nav  {
+    margin-left: 76px;
+}
+
+
+.footer-third {
+    margin-top: 78px;
+    margin-left: 76px;
+}
+.subscribe {
+margin-bottom: 45px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+}
+.form- {
+    text-align: center;
+    position: relative;
+}
+.form-mail-subscribe {
+     
+    padding-left: 30px;
+width: 491px;
+min-height: 54px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* text-align: center; */
+color: #081F32;
+opacity: 0.5;
+
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+.btn-submit-footer {
+    position: absolute;
+    left: 325px;
+    top: 0;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+
+padding: 15px 40px;
+background: #1B75BB !important;
+border-radius: 5px;
+}
+
+@media (max-width:1170px) {
+    .footer-row{ 
+        display: block;
+    }
+    .form- {
+        text-align: left;
+    }
+}
+@media (max-width:620px) {
+    .btn-submit-footer {
+        position: static;
+    }
+    .form-mail-subscribe {
+        margin-bottom: 20px;
+        width: 291px;
+    }
+    
+}
+@media (max-width:458px) {
+    .footer-second-row {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-third {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

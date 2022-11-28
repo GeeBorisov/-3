@@ -1,0 +1,110 @@
+.client-say {
+    margin-top: 140px;
+}
+.client-say-header {
+    display: flex;
+    justify-content: space-between;
+}
+.client-say-header h2 {
+    font-style: normal;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.client-say-review {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    column-gap: 30px;
+    /* row-gap: 30px; */
+    justify-content: center;
+}
+.review-card {
+    max-width: 360px;
+    min-height: 325px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
+border-radius: 10px;
+text-align: center;
+}
+.review-card img {
+margin-top: 28px;
+margin-bottom: 25px;
+}
+.review {
+    position: relative;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+text-align: center;
+color: #081F32;
+opacity: 0.6;
+}
+.review::before {
+    content:url(./../img/main/client-say/\,\,.svg);
+    position: absolute;
+    left: 30px;
+    top: -19px;
+}
+.name {
+    margin-top: 30px;
+font-style: normal;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+opacity: 0.7;
+}
+.mail {
+    margin-top: 5px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+text-align: center;
+opacity: 0.7;
+}
+
+@media (max-width: 1170px) {
+    .client-say-review {
+        row-gap: 30px;
+        grid-template-columns: repeat(1, 360px);
+    }
+    .client-say-header {
+        justify-content: center;
+        align-items: center;
+    }
+    .client-say-btn {
+        padding-left: 20px;
+    }
+}
+@media (max-width: 502px)  {
+    .client-say-header  {
+        display: block;
+        text-align: center;
+    }
+    .client-say-btn {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 370px) {
+    .client-say-header h2 {
+        font-size: 25px;
+    }
+    .review {
+        font-size: 16px;
+        padding-left: 10px;
+    padding-right: 10px;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .review-card {
+        margin-left: auto;
+    margin-right: auto;
+    }
+}
